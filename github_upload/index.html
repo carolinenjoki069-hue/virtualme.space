@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>virtualme.space | Your Entire Digital Universe</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/vms_logo_favicon.png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#ffb2b9",
+                      "outline-variant": "#494847",
+                      "secondary": "#62e2ff",
+                      "primary-fixed": "#dd8bfb",
+                      "secondary-dim": "#51d4f0",
+                      "on-secondary-fixed-variant": "#005968",
+                      "error-container": "#a70138",
+                      "on-secondary": "#004f5d",
+                      "on-surface": "#ffffff",
+                      "on-primary-fixed-variant": "#5a0179",
+                      "on-tertiary-fixed": "#23004e",
+                      "on-tertiary": "#42177d",
+                      "surface-dim": "#0e0e0e",
+                      "surface-container": "#1a1919",
+                      "error": "#ff6e84",
+                      "tertiary": "#c6a2ff",
+                      "surface-container-lowest": "#000000",
+                      "inverse-on-surface": "#565554",
+                      "background": "#0e0e0e",
+                      "surface-tint": "#e08efe",
+                      "on-secondary-fixed": "#003a45",
+                      "surface": "#0e0e0e",
+                      "on-tertiary-fixed-variant": "#492084",
+                      "surface-container-low": "#131313",
+                      "inverse-surface": "#fcf8f8",
+                      "tertiary-dim": "#b28af1",
+                      "surface-variant": "#262626",
+                      "on-primary-fixed": "#21002f",
+                      "on-tertiary-container": "#370471",
+                      "on-surface-variant": "#adaaaa",
+                      "surface-container-high": "#201f1f",
+                      "on-primary": "#4f006c",
+                      "on-background": "#ffffff",
+                      "tertiary-container": "#ba92fa",
+                      "tertiary-fixed-dim": "#b790f7",
+                      "primary-container": "#d180ef",
+                      "primary": "#e08efe",
+                      "tertiary-fixed": "#c49fff",
+                      "on-secondary-container": "#ebfaff",
+                      "primary-dim": "#ce7eec",
+                      "on-primary-container": "#3d0055",
+                      "on-error": "#490013",
+                      "secondary-fixed": "#62e2ff",
+                      "primary-fixed-dim": "#ce7eec",
+                      "inverse-primary": "#893da7",
+                      "secondary-fixed-dim": "#51d4f0",
+                      "secondary-container": "#006879",
+                      "surface-bright": "#2c2c2c",
+                      "surface-container-highest": "#262626",
+                      "error-dim": "#d73357",
+                      "outline": "#777575"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-nebula-purple {
+            background: radial-gradient(circle at center, rgba(224, 142, 254, 0.15) 0%, transparent 70%);
+        }
+        .glow-nebula-teal {
+            background: radial-gradient(circle at center, rgba(98, 226, 255, 0.1) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('assets/bg-dark.png');">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl shadow-[0px_20px_50px_rgba(224,142,254,0.08)]">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<img alt="virtualme.space logo" class="h-10 object-contain" src="assets/vms_logo_full.png"/>
+</div>
+<div class="hidden md:flex items-center gap-8 plus-jakarta-sans font-bold tracking-tight">
+<a class="text-on-surface-variant hover:text-[#62e2ff] transition-colors duration-300" href="#">Features</a>
+<a class="text-on-surface-variant hover:text-[#62e2ff] transition-colors duration-300" href="#">Templates</a>
+<a class="text-on-surface-variant hover:text-[#62e2ff] transition-colors duration-300" href="#pricing">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-white">search</button>
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary-container px-6 py-2.5 rounded-full font-bold plus-jakarta-sans text-sm scale-95 active:duration-150 active:scale-90 transition-all shadow-[0px_10px_30px_rgba(224,142,254,0.3)]">
+                    Get Started Free
+                </button>
+</div>
+</nav>
+</header>
+<main class="relative pt-32 overflow-hidden">
+<!-- Glow Orbs -->
+<div class="absolute top-20 -left-20 w-[500px] h-[500px] glow-nebula-purple pointer-events-none opacity-40"></div>
+<div class="absolute top-80 -right-20 w-[600px] h-[600px] glow-nebula-teal pointer-events-none opacity-30"></div>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 lg:flex items-center gap-12 mb-32">
+<div class="lg:w-1/2 space-y-8">
+<h1 class="text-5xl lg:text-7xl font-extrabold plus-jakarta-sans tracking-tight leading-[1.1]">
+                    Your Entire Digital <br/>
+<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Universe</span>, in One Link.
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    Consolidate your links, content, and products on a single, stunning <span class="text-primary font-bold">virtualme.space</span> page. Built for creators who demand high-end design and absolute simplicity.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-extrabold rounded-full text-lg shadow-[0px_20px_50px_rgba(224,142,254,0.25)] hover:scale-105 transition-transform">
+                        Create Your Free Page
+                    </button>
+<button class="px-8 py-4 bg-surface-container-high border border-outline-variant/30 text-white font-bold rounded-full text-lg hover:bg-surface-variant transition-colors">
+                        View Templates
+                    </button>
+</div>
+</div>
+<!-- Mobile Mockup -->
+<div class="lg:w-1/2 mt-20 lg:mt-0 flex justify-center relative">
+<div class="w-[320px] h-[650px] bg-surface-container-lowest rounded-[3rem] border-[8px] border-surface-variant relative shadow-2xl overflow-hidden group">
+<div class="absolute top-0 w-full h-6 bg-surface-variant rounded-b-xl z-10 flex justify-center">
+<div class="w-20 h-4 bg-surface-container-lowest rounded-full mt-1"></div>
+</div>
+<div class="h-full overflow-y-auto p-6 space-y-6 pt-12 custom-scrollbar">
+<div class="flex flex-col items-center space-y-3">
+<div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-tertiary p-1">
+<img alt="Profile avatar" class="w-full h-full rounded-full object-cover" data-alt="close up portrait of a stylish young digital creator with vibrant lighting and neon accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvFb3Yin_5sgRMkhtRwaWjrvz831hwymbz2TNRO2liUaEzsnnfZOn3OsJdnCS-Z3OWr9q86uRZigXPl66dlYfxeaNT6LhV5mpkjee1duhLCpe0eR9py7oZbyaOazhWAM_w2rCclPqQ4R4JugCMgqlAram1BdSqCeKhSJMY7qLrqpQ5Ns9KoWzlCn2Hda3-JDwVHS56lCBYvFIycuh0oSyWPoz7PeW0QCvbnizgs-4zvbJp_5koVxj-Nm_c0vz9NbL53T2Ss0vnXZw"/>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-bold">@vms</h3>
+<p class="text-xs text-on-surface-variant">Digital Artist &amp; Curator</p>
+</div>
+</div>
+<div class="space-y-3">
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-[#FF0000] to-[#b91c1c] text-white font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">play_circle</span> Latest YouTube Video
+                            </button>
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">camera</span> Instagram
+                            </button>
+<button class="w-full py-4 rounded-xl bg-gradient-to-r from-secondary to-primary text-on-primary-fixed font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">shopping_bag</span> My Art Store
+                            </button>
+<button class="w-full py-4 rounded-xl bg-surface-container-highest text-white font-bold text-sm flex items-center justify-center gap-2 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-sm">mail</span> Mailing List
+                            </button>
+<button class="w-full py-4 rounded-xl bg-[#00BA7C] text-white font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">volunteer_activism</span> Tip Me
+                            </button>
+</div>
+</div>
+</div>
+<!-- Ambient shadow under mockup -->
+<div class="absolute -bottom-10 w-64 h-10 bg-primary/20 blur-[50px] rounded-full"></div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="max-w-7xl mx-auto px-8 mb-40 relative">
+<div class="absolute -top-40 right-0 w-[400px] h-[400px] glow-nebula-purple opacity-20 pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card 1 -->
+<div class="bg-surface-container rounded-3xl p-8 hover:bg-surface-variant transition-all duration-500 group border border-outline-variant/10">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">link</span>
+</div>
+<h3 class="text-2xl font-bold plus-jakarta-sans mb-4">Consolidated Profile</h3>
+<p class="text-on-surface-variant leading-relaxed">Bring all your platforms under one roof with a single link that never expires.</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="bg-surface-container rounded-3xl p-8 hover:bg-surface-variant transition-all duration-500 group border border-outline-variant/10">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">bar_chart</span>
+</div>
+<h3 class="text-2xl font-bold plus-jakarta-sans mb-4">Insightful Analytics</h3>
+<p class="text-on-surface-variant leading-relaxed">Track performance and understand your audience with real-time conversion data.</p>
+</div>
+<!-- Feature Card 3 -->
+<div class="bg-surface-container rounded-3xl p-8 hover:bg-surface-variant transition-all duration-500 group border border-outline-variant/10">
+<div class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">shopping_bag</span>
+</div>
+<h3 class="text-2xl font-bold plus-jakarta-sans mb-4">Creator Monetization</h3>
+<p class="text-on-surface-variant leading-relaxed">Sell digital products and receive tips from your fans seamlessly across the globe.</p>
+</div>
+</div>
+</section>
+<!-- Asymmetric Detail Section -->
+<section class="max-w-7xl mx-auto px-8 mb-40 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="bg-surface-container rounded-[2rem] overflow-hidden p-4 relative group">
+<img alt="App dashboard overview" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Sleek dark mode analytics dashboard showing colorful charts and user engagement metrics in a minimalist UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJaQdemigg2f2XsmCkj6aZx35iHbq8YGtsxUcTB3HRUnCwKOAQlA-TZvxaQfdOaADu1p-1I3pe2mCeXUWqwofewPaKHTUEXuVn4Iw0e-Kat05IxzD5Dg9QsFucQdwXIfhXOAFWTdyTE-9RGCVLlZvaFxRVvSoqj0NDCN7kJbJUcFA7i2oUt0udk7-2uryXZ4ZKv1di7QyQIen8hA41BNbv0Mn4rm4FxTO2u2bojKiVDD_FEaCX5h8sAf-qwQ3Wb_lm-Sugk9Y3S6c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2 space-y-6">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Management Console</span>
+<h2 class="text-4xl lg:text-5xl font-bold plus-jakarta-sans leading-tight">Effortless Control Over Your Digital Identity</h2>
+<p class="text-on-surface-variant text-lg">Our intuitive drag-and-drop editor allows you to customize your page in seconds. No coding required, just your creativity and our high-end design primitives.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">Custom .space domains available</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-semibold">Deep pixel-level customization</span>
+</li>
+</ul>
+</div>
+</section>
+
+<!-- Tokenomics Section ($VIRTUAL) -->
+<section class="max-w-7xl mx-auto px-8 mb-40 relative">
+    <div class="text-center mb-16 relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold plus-jakarta-sans mb-4">Tokenomics ($VIRTUAL)</h2>
+        <p class="text-on-surface-variant text-xl max-w-2xl mx-auto">Powering the virtualme ecosystem on Solana.</p>
+    </div>
+    <div class="bg-surface-container rounded-3xl p-8 md:p-12 border border-outline-variant/10 shadow-xl max-w-4xl mx-auto relative overflow-hidden group">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center relative z-10">
+            <div>
+                <div class="text-sm text-on-surface-variant uppercase tracking-wider font-bold mb-2">Token Name</div>
+                <div class="text-2xl font-bold text-secondary">VIRTUAL</div>
+            </div>
+            <div>
+                <div class="text-sm text-on-surface-variant uppercase tracking-wider font-bold mb-2">Total Supply</div>
+                <div class="text-2xl font-bold text-primary">1 Billion</div>
+            </div>
+            <div>
+                <div class="text-sm text-on-surface-variant uppercase tracking-wider font-bold mb-2">Network</div>
+                <div class="text-2xl font-bold">Solana (pump.fun)</div>
+            </div>
+        </div>
+        
+        <div class="space-y-6 relative z-10 border-t border-outline-variant/10 pt-8 mt-8">
+            <h3 class="text-2xl font-bold plus-jakarta-sans">Platform Support & Liquidity Pool</h3>
+            <p class="text-on-surface-variant leading-relaxed text-lg">
+                The $VIRTUAL token supports the entire virtualme platform. Upon migration to the <strong>Pmpswap pool</strong>, a dedicated liquidity pool is created to reward our most active users.
+            </p>
+            <div class="p-6 rounded-2xl bg-primary/10 border border-primary/20">
+                <h4 class="font-bold mb-2 flex items-center gap-2 plus-jakarta-sans text-primary">
+                    <span class="material-symbols-outlined text-primary">campaign</span>
+                    Business Plan Yield
+                </h4>
+                <p class="text-sm opacity-90 leading-relaxed text-white">
+                    Users in the Business Plan tier will earn from a percentage of their first payment. Specifically, <strong>75% of that amount</strong> is put directly into the liquidity pool. The generated profit from this pool is then used to cover the user's upcoming subscription payments, creating a self-sustaining ecosystem.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Roadmap Section -->
+<section class="max-w-7xl mx-auto px-8 mb-40 flex flex-col items-center">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold plus-jakarta-sans mb-4">The Future of virtualme.space</h2>
+        <p class="text-on-surface-variant text-xl">Our timeline to revolutionize web3 creator identity.</p>
+    </div>
+    
+    <div class="w-full max-w-4xl p-8 rounded-3xl bg-surface-container border border-outline-variant/10">
+        <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-primary before:to-transparent">
+            
+            <!-- Phase 1 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <button onclick="togglePhase('phase1')" class="flex items-center justify-center px-4 py-2 text-sm rounded-full border-4 border-surface-container-highest bg-primary text-white font-bold shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-[0_0_15px_rgba(224,142,254,0.5)] cursor-pointer hover:scale-110 transition-transform focus:outline-none tracking-wider">
+                    Phase 1
+                </button>
+                <div id="phase1" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-2xl border border-transparent bg-surface/50 backdrop-blur-sm overflow-hidden transition-all duration-300 max-h-0 opacity-0">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-primary mb-2 plus-jakarta-sans">Phase 1: Token Launch</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Deployment of $VIRTUAL on pump.fun. Initial liquidity generation and community building.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mt-8">
+                <button onclick="togglePhase('phase2')" class="flex items-center justify-center px-4 py-2 text-sm rounded-full border-4 border-surface-container-highest bg-secondary text-[#003a45] font-bold shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-[0_0_15px_rgba(98,226,255,0.5)] cursor-pointer hover:scale-110 transition-transform focus:outline-none tracking-wider">
+                    Phase 2
+                </button>
+                <div id="phase2" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-2xl border border-transparent bg-surface/50 backdrop-blur-sm overflow-hidden transition-all duration-300 max-h-0 opacity-0">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-secondary mb-2 plus-jakarta-sans">Phase 2: Pmpswap Migration</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Migration to Pmpswap pool. Activation of the Business Tier yield mechanism (75% of first payment to LP).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mt-8">
+                <button onclick="togglePhase('phase3')" class="flex items-center justify-center px-4 py-2 text-sm rounded-full border-4 border-surface-container-highest bg-[#6d28d9] text-white font-bold shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-[0_0_15px_rgba(109,40,217,0.5)] cursor-pointer hover:scale-110 transition-transform focus:outline-none tracking-wider">
+                    Phase 3
+                </button>
+                <div id="phase3" class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] rounded-2xl border border-transparent bg-surface/50 backdrop-blur-sm overflow-hidden transition-all duration-300 max-h-0 opacity-0">
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-[#b790f7] mb-2 plus-jakarta-sans">Phase 3: Web3 Commerce</h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Full integration of Solana payments for creator storefronts. Pay for physical and digital goods with $VIRTUAL.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="max-w-7xl mx-auto px-8 mb-40 flex flex-col items-center scroll-mt-32">
+    <div class="text-center mb-16 relative">
+        <h2 class="text-4xl md:text-5xl font-bold plus-jakarta-sans mb-4">Simple, transparent pricing</h2>
+        <p class="text-xl text-on-surface-variant max-w-2xl mx-auto">Start for free, upgrade when you need more power.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto w-full items-start">
+        <!-- Core MVP -->
+        <div class="p-8 rounded-3xl border border-outline-variant/10 bg-surface-container relative flex flex-col h-full hover:border-primary/30 transition-colors">
+            <h3 class="text-2xl font-bold mb-2 plus-jakarta-sans">Core MVP</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+                <span class="text-4xl font-extrabold">$0</span>
+            </div>
+            <p class="text-sm text-on-surface-variant mb-8 h-10">The goal here is pure user acquisition and frictionless onboarding.</p>
+            
+            <ul class="space-y-4 mb-8 flex-1">
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Unlimited Basic Links</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Basic Profile Theme</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col opacity-60 italic text-on-surface-variant">Watermark badge at bottom</span>
+                </li>
+            </ul>
+            
+            <button class="w-full py-4 rounded-full font-bold transition-all bg-surface hover:bg-surface-variant text-white border border-outline-variant/30">
+                Get Started
+            </button>
+        </div>
+
+        <!-- Growth Tier -->
+        <div class="p-8 rounded-3xl border border-primary relative flex flex-col h-full bg-surface-container transform md:-translate-y-4 shadow-[0_20px_50px_rgba(224,142,254,0.15)] z-10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg whitespace-nowrap">
+                Most Popular
+            </div>
+            <h3 class="text-2xl font-bold mb-2 plus-jakarta-sans">Growth Tier</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+                <span class="text-4xl font-extrabold">$5</span>
+                <span class="text-on-surface-variant">/month</span>
+            </div>
+            <p class="text-sm text-on-surface-variant mb-8 h-10">Convert emerging creators with insights, aesthetics, and monetization.</p>
+            
+            <ul class="space-y-4 mb-8 flex-1">
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Rich Media Embeds</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Advanced Tracking & Analytics</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Premium Mobile-First Themes</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Platform Merch Affiliate Program</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Removal of Platform Watermark</span>
+                </li>
+            </ul>
+            
+            <button class="w-full py-4 rounded-full font-extrabold transition-all bg-gradient-to-r from-primary to-secondary text-on-primary-fixed shadow-lg hover:shadow-primary/30 hover:scale-105">
+                Go Pro Now
+            </button>
+        </div>
+
+        <!-- Business & Web3 -->
+        <div class="p-8 rounded-3xl border border-outline-variant/10 bg-surface-container relative flex flex-col h-full hover:border-[#6d28d9]/50 transition-colors">
+            <h3 class="text-2xl font-bold mb-2 plus-jakarta-sans">Business & Web3</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+                <span class="text-4xl font-extrabold">$20</span>
+                <span class="text-on-surface-variant">/month</span>
+            </div>
+            <p class="text-sm text-on-surface-variant mb-8 h-10">For established brands needing deep commerce and community yield.</p>
+            
+            <ul class="space-y-4 mb-8 flex-1">
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Everything in Pro</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Bring-Your-Own Commerce (Shopify AR)</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">Custom Domains</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-primary text-base">handyman</span>
+                    <span class="flex flex-col opacity-80">
+                        <span>Web3 Engagement Yield (Solana)</span>
+                        <span class="text-[10px] uppercase tracking-wider text-primary font-bold mt-1">Coming Soon</span>
+                    </span>
+                </li>
+                <li class="flex items-start gap-3 text-sm">
+                    <span class="material-symbols-outlined text-secondary text-base">check</span>
+                    <span class="flex flex-col">AI & CRM Suite</span>
+                </li>
+            </ul>
+            
+            <button class="w-full py-4 rounded-full font-bold transition-all bg-surface hover:bg-surface-variant text-white border border-outline-variant/30">
+                Get Started
+            </button>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#131313] rounded-t-[3rem] border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto w-full">
+<div class="flex flex-col items-center md:items-start space-y-6 mb-12 md:mb-0">
+<div class="flex items-center gap-3">
+<img alt="virtualme.space footer logo" class="h-10 object-contain" src="assets/vms_logo_icon_512.png"/>
+<div class="flex flex-col items-center">
+    <span class="text-[1.35rem] font-bold text-[#e4e4e4] plus-jakarta-sans leading-none tracking-tight">virtualme</span>
+    <div class="flex items-center w-full gap-[6px] mt-[4px]">
+        <div class="h-[1px] bg-white/50 flex-grow"></div>
+        <span class="text-[0.65rem] font-bold text-white/70 plus-jakarta-sans leading-none">.space</span>
+        <div class="h-[1px] bg-white/50 flex-grow"></div>
+    </div>
+</div>
+</div>
+<p class="manrope text-sm tracking-wide text-gray-500 max-w-xs text-center md:text-left">
+                    Elevating the digital creator experience through atmospheric design and seamless connectivity.
+                </p>
+<p class="manrope text-sm tracking-wide text-gray-500">© 2024 virtualme.space. All rights reserved.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-16">
+<div class="flex flex-col space-y-4 text-center md:text-left">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mb-2">Legal</h4>
+<a class="text-gray-500 hover:text-white transition-opacity manrope text-sm" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-white transition-opacity manrope text-sm" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col items-center md:items-start space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest mb-2">Connect</h4>
+<div class="flex gap-6">
+<a class="text-gray-500 hover:text-[#e08efe] transition-colors" href="#"><img alt="facebook" class="w-5 h-5 invert opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMP7xisg7NFovEEe5IzCd4RKHQV5Tif7zqUqUKhi1zyoTwV-UCl7vLDGLDne1F6vLLyA4hbVL0Sr0kn3IrgGrhQkJTR2Ewj_wLKo3rDdgix9Asr7MOit4fkecvvQD0Kt0m0fPgrIG5WdFECOALlb33zrf1Nl9s6jXk-sc_8GhtQ-D55dwlYT-u3xrqZRcsO8vxadrVEDbmoNCiIbJhRS7YMOB6dk92_NISvhVcDMhHoN0NJp8eTBlvESqa_NDbpzdWBqBmLeUdSDM"/></a>
+<a class="text-gray-500 hover:text-[#e08efe] transition-colors" href="#"><img alt="instagram" class="w-5 h-5 invert opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK4GZgZZgH_KVdFMKGIQDIEqTaTGJsGLPohbyhQ9zMxG0EnYahwa9LhHPq0mD49mkop21BIg2dOZ1N3hMGyloieEAUkM8qTDZRXcje63oDa-SQKz6kwGGbk4n2anxueFYisPNtTL4xaY9luRW5k6ZyloClWHsL1pY1mU2XYCP4Mk-1JuiqD2dydjBlfAI9XcGuvww_uJRvorYUhPM-X0YAsANNrGt5yMTvhMLd9L2dSACb_y69ruwFqQJPkAAcuORffDEpj8bVdXw"/></a>
+<a class="text-gray-500 hover:text-[#e08efe] transition-colors" href="#"><img alt="youtube" class="w-5 h-5 invert opacity-50 hover:opacity-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN9TlzEhn4Ja5KcQr-SoM7Rx4JiABAAsJ3KSOXaQ6LMkOnpkZp8QxReOFKjw5_7DVo8nmXSn1qCFHWNvYSB3TIDPWFm7mpxYrVVzgfkIwp1DPvFBTJzhvVhrHYYdPjEIzSDRNd3MDfyGVeVNHpVi50lgxV1Ol2yi6ZHBt0S0-iJmBnvMyEvbV1r30x-hK8zAv1wiRUA0_JjyKYR4K_dLKRLRP7EhP8RVgLn0_KWBW2ATs_q2BJeF8ITCudgpJdqQf3CYhHd0blvew"/></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    function togglePhase(id) {
+        const el = document.getElementById(id);
+        if (el.classList.contains('max-h-96')) {
+            el.classList.remove('max-h-96', 'border-outline-variant/20', 'opacity-100');
+            el.classList.add('max-h-0', 'border-transparent', 'opacity-0');
+        } else {
+            el.classList.remove('max-h-0', 'border-transparent', 'opacity-0');
+            el.classList.add('max-h-96', 'border-outline-variant/20', 'opacity-100');
+        }
+    }
+
+    document.addEventListener('click', function(e) {
+        const adUrl = 'https://www.profitablecpmratenetwork.com/njjviy1c?key=fdf7c7b6c2f7559b4f300c3cb733beda';
+        const target = e.target.closest('a, button');
+        if (target) {
+            if (!target.dataset.adClicked) {
+                e.preventDefault();
+                e.stopPropagation();
+                target.dataset.adClicked = 'true';
+                window.open(adUrl, '_blank');
+            }
+        }
+    }, true);
+</script>
+</body></html>
